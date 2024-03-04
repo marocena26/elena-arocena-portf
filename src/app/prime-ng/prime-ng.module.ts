@@ -5,6 +5,7 @@ import { ButtonModule } from 'primeng/button';
 import { FormsModule } from '@angular/forms';
 import { InputSwitchModule } from 'primeng/inputswitch';
 import { InputTextModule } from 'primeng/inputtext';
+import { SidebarModule } from 'primeng/sidebar';
 import { ToolbarModule } from 'primeng/toolbar';
 
 @NgModule({
@@ -17,6 +18,7 @@ import { ToolbarModule } from 'primeng/toolbar';
     FormsModule,
     InputSwitchModule,
     InputTextModule,
+    SidebarModule,
     ToolbarModule,
   ],
 })

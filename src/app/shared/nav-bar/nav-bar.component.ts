@@ -8,7 +8,10 @@ import { ThemeService } from 'src/app/services/theme.service';
 })
 export class NavBarComponent implements OnInit {
   checked: boolean = true;
+  sidebarVisible: boolean = false;
+
   selectedTheme: string = 'dark';
+
   themeService: ThemeService = inject(ThemeService);
 
   ngOnInit(): void {

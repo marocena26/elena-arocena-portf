@@ -1,22 +1,87 @@
-<p-toolbar>
-  <div class="p-toolbar-group-start">
-      <button pButton icon="pi pi-plus" class="mr-2"></button>
+<header class="header" [ngClass]="{ sticky: !sidebarVisible, header: true }">
+  <div class="container-custom">
+    <!-- ************** MOBILE ************** -->
+    <nav class="nav showSectionMobile">
+      <div class="flex align-items-center gap-3">
+        <p class="item"><a href="#home">EA</a></p>
+        <i
+          class="pi pi-moon nav-icon"
+          (click)="onThemeChange('dark')"
+          *ngIf="selectedTheme === 'light'"
+        ></i>
+        <i
+          class="pi pi-sun nav-icon"
+          (click)="onThemeChange('light')"
+          *ngIf="selectedTheme === 'dark'"
+        ></i>
+      </div>
+
+      <div>
+        <i
+          class="pi pi-th-large nav-icon"
+          (click)="sidebarVisible = true"
+
+        ></i>
+      </div>
+    </nav>
+
+    <p-sidebar [(visible)]="sidebarVisible" position="bottom">
+      <ng-template pTemplate="content">
+        <div class="flex justify-content-between pt-2 pb-2">
+          <div class="flex flex-column align-items-center">
+            <i class="pi pi-user nav-icon-sidebar"></i>
+            <a href="#about-me">
+              <p>Conóceme</p>
+            </a>
+          </div>
+          <div class="flex flex-column align-items-center">
+            <i class="pi pi-code nav-icon-sidebar"></i>
+            <a href="#projects">
+              <p>Proyectos</p>
+            </a>
+          </div>
+          <div class="flex flex-column align-items-center">
+            <i class="pi pi-cog nav-icon-sidebar"></i>
+            <a href="#skills">
+              <p>Skills</p>
+            </a>
+          </div>
+          <div class="flex flex-column align-items-center">
+            <i class="pi pi-whatsapp nav-icon-sidebar"></i>
+            <a href="mailto:mariaelena.arocena@gmail.com">
+              <p>Contacto</p>
+            </a>
+          </div>
+        </div>
+      </ng-template>
+    </p-sidebar>
+
+    <!-- ************** DESK ************** -->
+    <nav class="nav showSectionDesk">
+      <div class="flex align-items-center gap-3">
+        <p class="item"><a href="#home">EA</a></p>
+        <i
+          class="pi pi-moon nav-icon"
+          (click)="onThemeChange('dark')"
+          *ngIf="selectedTheme === 'light'"
+        ></i>
+        <i
+          class="pi pi-sun nav-icon"
+          (click)="onThemeChange('light')"
+          *ngIf="selectedTheme === 'dark'"
+        ></i>
+      </div>
+      <ul class="flex gap-4">
+        <li class="item"><a href="#about-me">Conóceme</a></li>
+        <li class="item"><a href="#projects">Proyectos</a></li>
+        <li class="item"><a href="#skills">Skills</a></li>
+        <li class="item">
+          <a href="mailto:mariaelena.arocena@gmail.com">Contacto</a>
+        </li>
+      </ul>
+    </nav>
   </div>
-  <div class="p-toolbar-group-center">
-      <span class="p-input-icon-left">
-          <i class="pi pi-search"></i>
-          <input pInputText placeholder="Search" />
-      </span>
-  </div>
-  <div class="p-toolbar-group-end">
-    <p-inputSwitch [(ngModel)]="checked" (click)="onThemeChange(checked ? 'dark' : 'light')"></p-inputSwitch>
-  </div>
-</p-toolbar>
+</header>
 
-
-
-
-
-
-
-
+<!--
+<p-inputSwitch [(ngModel)]="checked" (click)="onThemeChange(checked ? 'dark' : 'light')"></p-inputSwitch> -->
