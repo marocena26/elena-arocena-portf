@@ -1,4 +1,12 @@
-<header class="header" [ngClass]="{ sticker: !sidebarVisible, header: true }">
+<header
+  class="header"
+  [ngClass]="{
+    sticker: !sidebarVisible,
+    header: true,
+    light: selectedTheme === 'light',
+    dark: selectedTheme === 'dark'
+  }"
+>
   <div class="container-custom">
     <!-- ************** MOBILE ************** -->
     <nav class="nav showSectionMobile">
@@ -17,36 +25,44 @@
       </div>
 
       <div>
-        <i
-          class="pi pi-th-large nav-icon"
-          (click)="sidebarVisible = true"
-
-        ></i>
+        <i class="pi pi-th-large nav-icon" (click)="sidebarVisible = true"></i>
       </div>
     </nav>
 
     <p-sidebar [(visible)]="sidebarVisible" position="bottom">
       <ng-template pTemplate="content">
         <div class="flex justify-content-between pt-2 pb-2">
-          <div class="flex flex-column align-items-center">
+          <div
+            class="flex flex-column align-items-center"
+            (click)="closeSidebar()"
+          >
             <i class="pi pi-code nav-icon-sidebar"></i>
             <a href="#projects">
               <p>Proyectos</p>
             </a>
           </div>
-          <div class="flex flex-column align-items-center">
+          <div
+            class="flex flex-column align-items-center"
+            (click)="closeSidebar()"
+          >
             <i class="pi pi-user nav-icon-sidebar"></i>
             <a href="#about-me">
               <p>Conóceme</p>
             </a>
           </div>
-          <div class="flex flex-column align-items-center">
+          <div
+            class="flex flex-column align-items-center"
+            (click)="closeSidebar()"
+          >
             <i class="pi pi-cog nav-icon-sidebar"></i>
             <a href="#skills">
               <p>Skills</p>
             </a>
           </div>
-          <div class="flex flex-column align-items-center">
+          <div
+            class="flex flex-column align-items-center"
+            (click)="closeSidebar()"
+          >
             <i class="pi pi-whatsapp nav-icon-sidebar"></i>
             <a href="mailto:mariaelena.arocena@gmail.com">
               <p>Contacto</p>

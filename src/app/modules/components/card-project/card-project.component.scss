@@ -12,6 +12,12 @@
 .card-icon {
   font-size: 20px;
   font-weight: 500;
+  color: $color-tertiary;
+  transition: 0.5s;
+  &:hover {
+    transition: 0.5s;
+    color: rgb(129, 140, 248, 0.7);
+  }
 }
 
 // ====================== IMAGE PROPERTIES =================

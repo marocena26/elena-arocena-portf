@@ -22,4 +22,9 @@ export class NavBarComponent implements OnInit {
     this.selectedTheme = theme;
     this.themeService.setTheme(theme);
   }
+
+  closeSidebar(): void {
+    this.sidebarVisible = false;
+  }
+  
 }

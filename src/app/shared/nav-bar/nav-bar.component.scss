@@ -1,7 +1,6 @@
 @import "../../../themes/variables.scss";
 
 .header {
-  // background: rgba(240, 241, 243, 0.7);
   z-index: 100;
 }
 
@@ -28,6 +27,13 @@
   font-weight: 500;
   font-size: 18px;
   cursor: pointer;
+}
+
+.light {
+  background: rgb(255, 255, 255, 0.7);
+}
+.dark {
+  background: rgb(0, 0, 0, 0.5);
 }
 
 // ====================== GENERAL PROPERTIES =================

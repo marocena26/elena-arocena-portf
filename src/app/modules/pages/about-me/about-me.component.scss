@@ -17,11 +17,11 @@
 
 .info-container {
   &__img {
-    -webkit-animation: profile-img 8s ease-in-out 1s infinite;
-    animation: profile-img 8s ease-in-out 1s infinite;
-
-    box-shadow: inset 0 0 0 9px hsla(0, 0%, 100%, 0.3);
-    height: 250px;
+    background: url(../../../../assets/img-background.png);
+    background-position: 50%;
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 220px;
     justify-self: center;
     width: 100%;
   }
@@ -32,25 +32,23 @@
   font-weight: 500;
 }
 
-@keyframes profile-img {
-  0% {
-    border-radius: 60% 40% 30% 70% / 60% 30% 70% 40%;
-  }
-  50% {
-    border-radius: 30% 60% 70% 40% / 50% 60% 30% 60%;
-  }
-  100% {
-    border-radius: 60% 40% 30% 70% / 60% 30% 70% 40%;
-  }
-}
+// @keyframes profile-img {
+//   0% {
+//     border-radius: 60% 40% 30% 70% / 60% 30% 70% 40%;
+//   }
+//   50% {
+//     border-radius: 30% 60% 70% 40% / 50% 60% 30% 60%;
+//   }
+//   100% {
+//     border-radius: 60% 40% 30% 70% / 60% 30% 70% 40%;
+//   }
+// }
 
 // ====================== GENERAL PROPERTIES =================
 
 h2 {
   font-size: 24px;
 }
-
-
 
 p.status {
   font-size: 18px;
@@ -92,7 +90,7 @@ span.info {
     }
 
     &__img {
-      height: 280px;
+      height: 294px;
       width: 38%;
     }
   }

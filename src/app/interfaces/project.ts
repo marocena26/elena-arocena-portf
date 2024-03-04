@@ -6,5 +6,4 @@ export interface Project {
   urlGithub: string;
   url: string;
   technologies: string[];
-  info: string;
 }
