@@ -1,0 +1,28 @@
+<article class="card-project" *ngFor="let project of allProjects">
+  <div class="card-project__wrap">
+    <img
+      src="../../../../assets/img-project/{{ project.img }}"
+      alt="{{ project.name }}"
+      class="img-project"
+    />
+  </div>
+  <div class="card-project__wrap">
+    <h3>{{ project.name }}</h3>
+    <div class="flex flex-wrap gap-2">
+      <p-chip
+        *ngFor="let technology of project.technologies"
+        [label]="technology"
+      ></p-chip>
+    </div>
+    <p class="color-subtitle"><b>{{ project.intro }}</b></p>
+    <p>{{ project.description }}</p>
+    <div class="flex gap-3">
+      <a href="{{ project.urlGithub }}" target="_blank"
+        ><i class="pi pi-github card-icon" style="font-size: 2rem"></i
+      ></a>
+      <a href="{{ project.url }}" target="_blank"
+        ><i class="pi pi-desktop card-icon" style="font-size: 2rem"></i
+      ></a>
+    </div>
+  </div>
+</article>
