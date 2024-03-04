@@ -3,11 +3,7 @@ import { CommonModule } from '@angular/common';
 import { NavBarComponent } from './nav-bar/nav-bar.component';
 import { FooterComponent } from './footer/footer.component';
 
-import { ToolbarModule } from 'primeng/toolbar';
-import { InputSwitchModule } from 'primeng/inputswitch';
-import { FormsModule } from '@angular/forms';
-import { ButtonModule } from 'primeng/button';
-import { InputTextModule } from 'primeng/inputtext';
+import { PrimeNgModule } from '../prime-ng/prime-ng.module';
 
 @NgModule({
   declarations: [
@@ -16,7 +12,7 @@ import { InputTextModule } from 'primeng/inputtext';
   ],
   imports: [
     CommonModule,
-    ToolbarModule,InputSwitchModule, FormsModule, ButtonModule, InputTextModule
+    PrimeNgModule
 
   ],
   exports: [

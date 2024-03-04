@@ -1,0 +1,56 @@
+@import "../../../../variables.scss";
+
+@mixin primeng-modules() {
+  // ====================== BUTTON =================
+
+  .p-button {
+    color: $color-letter-btn;
+    background: $color-background-btn;
+    border: 1px solid $color-background-btn;
+    padding: 0.75rem 1.25rem;
+    font-size: 1rem;
+    transition: background-color 0.2s, color 0.2s, border-color 0.2s,
+      box-shadow 0.2s;
+    border-radius: 6px;
+  }
+
+  .p-button.p-button-outlined:not(:disabled):active {
+    color: $color-letter-btn;
+    background: $color-background-btn;
+    border: 1px solid $color-background-btn;
+  }
+
+  .p-button.p-button-outlined:not(:disabled):hover {
+    color: $color-letter-btn;
+    background: $color-hover-btn;
+    border: 1px solid $color-hover-btn;
+    transition: 0.5s;
+  }
+
+  // ====================== SIDEBAR =================
+
+  .p-sidebar-header {
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+  }
+
+  // ====================== TIMELINE =================
+
+  .p-timeline-left .p-timeline-event-opposite {
+    text-align: right;
+    display: none;
+  }
+
+  .p-timeline .p-timeline-event-marker {
+    border: 2px solid $color-tertiary;
+    border-radius: 50%;
+    width: 1rem;
+    height: 1rem;
+    background-color: $color-background;
+  }
+
+  .p-timeline .p-timeline-event-connector {
+    background-color: $color-token;
+  }
+}

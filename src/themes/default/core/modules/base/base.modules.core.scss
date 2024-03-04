@@ -1,0 +1,11 @@
+@import "../../../../variables.scss";
+
+@mixin base-modules() {
+  .pointer {
+    cursor: pointer;
+  }
+
+  .color-subtitle {
+    color: $color-tertiary;
+  }
+}
