@@ -1,1 +1,26 @@
-<p>home works!</p>
+<main class="main container-custom">
+  <section class="home" id="home">
+    <div>
+      <h2>Elena Arocena</h2>
+      <h1>Front-End Developer</h1>
+    </div>
+    <div class="flex gap-2">
+      <p-button
+        label="Descargar CV"
+        [outlined]="true"
+        icon="pi pi-file-pdf"
+        (click)="onClicPDF()"
+      ></p-button>
+      <p-button
+        label="Linkedin"
+        [outlined]="true"
+        icon="pi pi-linkedin"
+        (click)="onClicLinkedin()"
+      >
+      </p-button>
+    </div>
+  </section>
+  <about-me></about-me>
+  <projects></projects>
+  <skills></skills>
+</main>

@@ -6,12 +6,13 @@
   .p-button {
     color: $color-letter-btn;
     background: $color-background-btn;
-    border: 1px solid $color-background-btn;
+    border: none;
     padding: 0.75rem 1.25rem;
     font-size: 1rem;
     transition: background-color 0.2s, color 0.2s, border-color 0.2s,
       box-shadow 0.2s;
     border-radius: 6px;
+    font-family: $font-family-custom;
   }
 
   .p-button.p-button-outlined:not(:disabled):active {
@@ -37,6 +38,10 @@
 
   // ====================== TIMELINE =================
 
+  .p-timeline {
+    font-family: $font-family-custom;
+  }
+
   .p-timeline-left .p-timeline-event-opposite {
     text-align: right;
     display: none;
@@ -47,10 +52,15 @@
     border-radius: 50%;
     width: 1rem;
     height: 1rem;
-    background-color: $color-background;
+    background-color: $color-tertiary;
   }
 
   .p-timeline .p-timeline-event-connector {
     background-color: $color-token;
+  }
+
+  .p-timeline.p-timeline-vertical .p-timeline-event-content {
+    padding: 0 1rem;
+    margin-top: -6px;
   }
 }

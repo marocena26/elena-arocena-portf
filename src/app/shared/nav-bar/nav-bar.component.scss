@@ -5,7 +5,7 @@
   z-index: 100;
 }
 
-.sticky {
+.sticker {
   backdrop-filter: blur(4px);
   position: fixed;
   top: 0;
@@ -34,7 +34,6 @@
 
 a {
   text-decoration: none;
-  // color: $color-primary;
   font-weight: 500;
 }
 

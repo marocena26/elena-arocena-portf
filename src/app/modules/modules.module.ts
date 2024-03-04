@@ -6,6 +6,7 @@ import { HomeComponent } from './pages/home/home.component';
 import { AboutMeComponent } from './pages/about-me/about-me.component';
 import { ProjectsComponent } from './pages/projects/projects.component';
 import { SkillsComponent } from './pages/skills/skills.component';
+import { PrimeNgModule } from '../prime-ng/prime-ng.module';
 
 
 @NgModule({
@@ -17,7 +18,7 @@ import { SkillsComponent } from './pages/skills/skills.component';
   ],
   imports: [
     CommonModule,
-    ModulesRoutingModule
+    ModulesRoutingModule, PrimeNgModule
   ]
 })
 export class ModulesModule { }
