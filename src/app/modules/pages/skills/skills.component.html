@@ -1,1 +1,24 @@
-<p>skills works!</p>
+<section class="skills" id="skills">
+  <div class="flex align-items-center gap-3">
+    <i class="pi pi-cog skills-icon"></i>
+    <h2>Skills</h2>
+  </div>
+
+  <div class="skills__tech">
+    <h3>Tecnologías</h3>
+    <div class="skills__tech-array" >
+      <div *ngFor="let tech of skills">
+        <p>{{ tech.name }} <span class="skills-separator">|</span></p>
+      </div>
+    </div>
+  </div>
+
+  <div class="skills__tech">
+    <h3>Soft skills</h3>
+    <div class="skills__tech-array" >
+      <div *ngFor="let skill of softSkills">
+        <p>{{ skill.name }} <span class="skills-separator">·</span></p>
+      </div>
+    </div>
+  </div>
+</section>
