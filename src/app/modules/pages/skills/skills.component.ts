@@ -57,13 +57,10 @@ export class SkillsComponent {
       name: 'Scrum ',
     },
     {
-      name: 'Pair Programming',
-    },
-    {
       name: 'Peer to peer',
     },
     {
-      name: 'Team Programming',
+      name: 'Pair - Team Programming',
     },
     {
       name: 'Mobile First',
