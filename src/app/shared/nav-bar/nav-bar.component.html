@@ -11,7 +11,13 @@
     <!-- ************** MOBILE ************** -->
     <nav class="nav showSectionMobile">
       <div class="flex align-items-center gap-3">
-        <p class="item"><a href="#home">EA</a></p>
+        <p class="item">
+          <a
+            href="#home"
+            [ngClass]="selectedTheme === 'dark' ? 'color-light' : 'color-dark'"
+            >EA</a
+          >
+        </p>
         <i
           class="pi pi-moon nav-icon"
           (click)="onThemeChange('dark')"
@@ -37,7 +43,12 @@
             (click)="closeSidebar()"
           >
             <i class="pi pi-code nav-icon-sidebar"></i>
-            <a href="#projects">
+            <a
+              href="#projects"
+              [ngClass]="
+                selectedTheme === 'dark' ? 'color-light' : 'color-dark'
+              "
+            >
               <p>Proyectos</p>
             </a>
           </div>
@@ -46,7 +57,12 @@
             (click)="closeSidebar()"
           >
             <i class="pi pi-user nav-icon-sidebar"></i>
-            <a href="#about-me">
+            <a
+              href="#about-me"
+              [ngClass]="
+                selectedTheme === 'dark' ? 'color-light' : 'color-dark'
+              "
+            >
               <p>Conóceme</p>
             </a>
           </div>
@@ -55,7 +71,12 @@
             (click)="closeSidebar()"
           >
             <i class="pi pi-cog nav-icon-sidebar"></i>
-            <a href="#skills">
+            <a
+              href="#skills"
+              [ngClass]="
+                selectedTheme === 'dark' ? 'color-light' : 'color-dark'
+              "
+            >
               <p>Skills</p>
             </a>
           </div>
@@ -64,7 +85,12 @@
             (click)="closeSidebar()"
           >
             <i class="pi pi-whatsapp nav-icon-sidebar"></i>
-            <a href="mailto:mariaelena.arocena@gmail.com">
+            <a
+              href="mailto:mariaelena.arocena@gmail.com"
+              [ngClass]="
+                selectedTheme === 'dark' ? 'color-light' : 'color-dark'
+              "
+            >
               <p>Contacto</p>
             </a>
           </div>
@@ -75,7 +101,13 @@
     <!-- ************** DESK ************** -->
     <nav class="nav showSectionDesk">
       <div class="flex align-items-center gap-3">
-        <p class="item"><a href="#home">EA</a></p>
+        <p class="item">
+          <a
+            href="#home"
+            [ngClass]="selectedTheme === 'dark' ? 'color-light' : 'color-dark'"
+            >EA</a
+          >
+        </p>
         <i
           class="pi pi-moon nav-icon"
           (click)="onThemeChange('dark')"
@@ -88,11 +120,33 @@
         ></i>
       </div>
       <ul class="flex gap-4">
-        <li class="item"><a href="#projects">Proyectos</a></li>
-        <li class="item"><a href="#about-me">Conóceme</a></li>
-        <li class="item"><a href="#skills">Skills</a></li>
         <li class="item">
-          <a href="mailto:mariaelena.arocena@gmail.com">Contacto</a>
+          <a
+            href="#projects"
+            [ngClass]="selectedTheme === 'dark' ? 'color-light' : 'color-dark'"
+            >Proyectos</a
+          >
+        </li>
+        <li class="item">
+          <a
+            href="#about-me"
+            [ngClass]="selectedTheme === 'dark' ? 'color-light' : 'color-dark'"
+            >Conóceme</a
+          >
+        </li>
+        <li class="item">
+          <a
+            href="#skills"
+            [ngClass]="selectedTheme === 'dark' ? 'color-light' : 'color-dark'"
+            >Skills</a
+          >
+        </li>
+        <li class="item">
+          <a
+            href="mailto:mariaelena.arocena@gmail.com"
+            [ngClass]="selectedTheme === 'dark' ? 'color-light' : 'color-dark'"
+            >Contacto</a
+          >
         </li>
       </ul>
     </nav>

@@ -5,7 +5,22 @@
     cursor: pointer;
   }
 
+  .light {
+    background: rgb(255, 255, 255, 0.7);
+  }
+  .dark {
+    background: rgb(0, 0, 0, 0.5);
+  }
+
   .color-subtitle {
     color: $color-tertiary;
+  }
+
+  .color-light{
+    color: $color-secondary;
+  }
+
+  .color-dark{
+    color: $color-primary;
   }
 }

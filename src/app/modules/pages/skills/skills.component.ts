@@ -60,7 +60,7 @@ export class SkillsComponent {
       name: 'Peer to peer',
     },
     {
-      name: 'Pair - Team Programming',
+      name: 'Pair | Team Programming',
     },
     {
       name: 'Mobile First',
