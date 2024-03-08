@@ -17,13 +17,15 @@
 
 .info-container {
   &__img {
-    background: url(../../../../assets/img-background.png);
+    background: url(../../../../assets/img-about.svg);
     background-position: 50%;
     background-repeat: no-repeat;
     background-size: cover;
     height: 220px;
     justify-self: center;
     width: 100%;
+    transform: scaleX(-1);
+
   }
 }
 

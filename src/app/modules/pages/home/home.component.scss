@@ -2,12 +2,8 @@
 
 .home {
   padding: 24px 0;
+  margin-top: 36px;
   height: 100vh;
-
-  // background-image: url('../../../../assets/background.jpg');
-  // background-size: cover;
-  // background-repeat: no-repeat;
-  // background-position: center;
 
   display: flex;
   flex-direction: column;
@@ -67,6 +63,11 @@ h1 span::after {
 
 @media (min-width: 768px) {
   .home {
+    background: url(../../../../assets/img-background.svg);
+    // background-position: 50% 20%;
+    background-repeat: no-repeat;
+    background-size: cover;
+
     &__btns {
       gap: 24px;
     }
