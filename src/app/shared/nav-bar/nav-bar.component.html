@@ -42,20 +42,6 @@
             class="flex flex-column align-items-center"
             (click)="closeSidebar()"
           >
-            <i class="pi pi-code nav-icon-sidebar"></i>
-            <a
-              href="#projects"
-              [ngClass]="
-                selectedTheme === 'dark' ? 'color-light' : 'color-dark'
-              "
-            >
-              <p>Proyectos</p>
-            </a>
-          </div>
-          <div
-            class="flex flex-column align-items-center"
-            (click)="closeSidebar()"
-          >
             <i class="pi pi-user nav-icon-sidebar"></i>
             <a
               href="#about-me"
@@ -64,6 +50,20 @@
               "
             >
               <p>Conóceme</p>
+            </a>
+          </div>
+          <div
+            class="flex flex-column align-items-center"
+            (click)="closeSidebar()"
+          >
+            <i class="pi pi-code nav-icon-sidebar"></i>
+            <a
+              href="#projects"
+              [ngClass]="
+                selectedTheme === 'dark' ? 'color-light' : 'color-dark'
+              "
+            >
+              <p>Proyectos</p>
             </a>
           </div>
           <div
@@ -122,18 +122,19 @@
       <ul class="flex gap-4">
         <li class="item">
           <a
-            href="#projects"
-            [ngClass]="selectedTheme === 'dark' ? 'color-light' : 'color-dark'"
-            >Proyectos</a
-          >
-        </li>
-        <li class="item">
-          <a
             href="#about-me"
             [ngClass]="selectedTheme === 'dark' ? 'color-light' : 'color-dark'"
             >Conóceme</a
           >
         </li>
+        <li class="item">
+          <a
+            href="#projects"
+            [ngClass]="selectedTheme === 'dark' ? 'color-light' : 'color-dark'"
+            >Proyectos</a
+          >
+        </li>
+
         <li class="item">
           <a
             href="#skills"

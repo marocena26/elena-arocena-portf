@@ -13,18 +13,26 @@
       box-shadow 0.2s;
     border-radius: 6px;
     font-family: $font-family-custom;
+
+    @media (min-width: 768px) {
+      font-size: 1.5rem;
+
+      .pi {
+        font-size: 1.5rem;
+      }
+    }
   }
 
   .p-button.p-button-outlined:not(:disabled):active {
     color: $color-letter-btn;
     background: $color-background-btn;
-    border: 1px solid $color-background-btn;
+    border: none;
   }
 
   .p-button.p-button-outlined:not(:disabled):hover {
     color: $color-letter-btn;
     background: $color-hover-btn;
-    border: 1px solid $color-hover-btn;
+    border: none;
     transition: 0.5s;
   }
 

@@ -4,7 +4,7 @@ $color-primary: black;
 $color-secondary: white;
 $color-tertiary: #818cf8;
 
-$color-background: #f0f1f3ff;
+$color-base: #f0f1f3ff;
 $color-hover: #535253ff;
 $color-details: #94a3b8;
 $color-token: #e5e7eb;
@@ -13,7 +13,7 @@ $color-token: #e5e7eb;
 
 $color-background-btn: black;
 $color-letter-btn: #f0f1f3ff;
-$color-hover-btn: #db7093;
+$color-hover-btn: $color-tertiary;
 
 // * ====================== FONT FAMILY ================= *
 

@@ -4,20 +4,56 @@
   padding: 24px 0;
   height: 100vh;
 
+  // background-image: url('../../../../assets/background.jpg');
+  // background-size: cover;
+  // background-repeat: no-repeat;
+  // background-position: center;
+
   display: flex;
   flex-direction: column;
   justify-content: center;
-  gap: 16px;
+  gap: 28px;
+  animation-duration: 2s;
+
+  &__btns {
+    gap: 8px;
+    animation: fadeInUp;
+    animation-duration: 4s;
+  }
 }
 
 // ====================== GENERAL PROPERTIES =================
 
-h1 {
-  font-size: 26px;
-}
-
 h2 {
   font-size: 24px;
+  text-transform: uppercase;
+  animation: fadeInUp;
+  animation-duration: 3s;
+  font-weight: 700;
+}
+
+h1 {
+  font-size: 26px;
+  animation: fadeInUp;
+  animation-duration: 3s;
+}
+
+h1 span {
+  position: relative;
+  display: inline-block;
+  margin-left: 0.5rem;
+  color: $color-tertiary;
+}
+
+h1 span::after {
+  content: "";
+  height: 4px;
+  background-color: $color-tertiary;
+  position: absolute;
+  bottom: -4px;
+  left: 0;
+  width: 0;
+  animation: linkAfter 0.5s 1s ease both;
 }
 
 .container-custom {
@@ -31,24 +67,55 @@ h2 {
 
 @media (min-width: 768px) {
   .home {
-    padding: 24px 0;
-    height: 100vh;
-
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    gap: 16px;
+    &__btns {
+      gap: 24px;
+    }
   }
 
   h1 {
-    font-size: 44px;
+    font-size: 52px;
   }
 
   h2 {
-    font-size: 36px;
+    font-size: 44px;
   }
 
   .container-custom {
     width: 65%;
+  }
+}
+
+// ====================== KEYFRAMES PROPERTIES =================
+
+@-moz-keyframes linkAfter {
+  0% {
+    width: 0;
+  }
+  100% {
+    width: 30px;
+  }
+}
+@-webkit-keyframes linkAfter {
+  0% {
+    width: 0;
+  }
+  100% {
+    width: 30px;
+  }
+}
+@-o-keyframes linkAfter {
+  0% {
+    width: 0;
+  }
+  100% {
+    width: 30px;
+  }
+}
+@keyframes linkAfter {
+  0% {
+    width: 0;
+  }
+  100% {
+    width: 30px;
   }
 }
