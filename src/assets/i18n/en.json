@@ -14,6 +14,16 @@
   "aboutDate3": "Sep 2022 | Jan 2023",
   "aboutDescription3": "Web Programming Bootcamp oriented to the development of web/mobile pages using programming languages such as HTML, CSS3 or JavaScript along with other programming tools.",
 
+  "sectionProjects": "Projects",
+  "projectsIntro": "Layout of a web project according to design.",
+  "projectsDescription": "Template of a simple landing page suitable for editing and developing future projects. Created from a design given by Adalab with HTML5 and Sass.",
+  "projectsIntro2": "Business Card Generator web application",
+  "projectsDescription2": "Interactive website designed to generate personalized business cards that can be shared on Twitter. Collaborative project created from scratch with HTML5, JavaScript and Sass",
+  "projectsIntro3": "Geography web application.",
+  "projectsDescription3": "Web designed to consult technical information of a specific country. Created from a design given by Fernando Herrera (Udemy) with Angular and Bootstrap.",
+  "projectsIntro4": "Angular Pipes web application.",
+  "projectsDescription4": "Web designed to consult technical information about the different types of Pipes that exist in Angular with some examples of how they work. Created from a design given by Fernando Herrera (Udemy) with Angular and Bootstrap.",
+
 
   "sectionSkills": "Technologies",
   "skill": "Attention to detail",
