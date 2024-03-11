@@ -1,12 +1,23 @@
 import { Component } from '@angular/core';
+import { TranslateService } from '@ngx-translate/core';
 import { Skills, SoftSkills } from 'src/app/interfaces/skills';
 
 @Component({
   selector: 'skills',
   templateUrl: './skills.component.html',
-  styleUrls: ['./skills.component.scss']
+  styleUrls: ['./skills.component.scss'],
 })
 export class SkillsComponent {
+  softSkills: SoftSkills[] = [];
+
+  constructor(private translate: TranslateService) {
+    this.translate.onLangChange.subscribe(() => {
+      this.loadSoftSkills();
+    });
+
+    this.loadSoftSkills();
+  }
+
   skills: Skills[] = [
     {
       name: 'HTML5',
@@ -49,30 +60,26 @@ export class SkillsComponent {
     },
   ];
 
-  softSkills: SoftSkills[] = [
-    {
-      name: 'Filosofía Agile',
-    },
-    {
-      name: 'Scrum ',
-    },
-    {
-      name: 'Peer to peer',
-    },
-    {
-      name: 'Pair | Team Programming',
-    },
-    {
-      name: 'Mobile First',
-    },
-    {
-      name: 'Atención al detalle',
-    },
-    {
-      name: 'Organización',
-    },
-    {
-      name: 'Autonomía',
-    },
-  ];
+  private loadSoftSkills() {
+    this.softSkills = [
+      {
+        name: 'Filosofía Agile',
+      },
+      {
+        name: 'Scrum ',
+      },
+      {
+        name: 'Peer to peer',
+      },
+      {
+        name: 'Pair | Team Programming',
+      },
+      {
+        name: 'Mobile First',
+      },
+      { name: this.translate.instant('skill') },
+      { name: this.translate.instant('skill1') },
+      { name: this.translate.instant('skill2') },
+    ];
+  }
 }

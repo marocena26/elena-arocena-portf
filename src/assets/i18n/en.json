@@ -12,5 +12,11 @@
   "aboutDate2": "Feb 2023 | Mar 2023",
   "aboutDescription2": "Pool 42 (selected). 26 consecutive days of work governed by the 42 methodology. Daily projects focused on obtaining a solid base in C language through peer to peer and self-learning.",
   "aboutDate3": "Sep 2022 | Jan 2023",
-  "aboutDescription3": "Web Programming Bootcamp oriented to the development of web/mobile pages using programming languages such as HTML, CSS3 or JavaScript along with other programming tools."
+  "aboutDescription3": "Web Programming Bootcamp oriented to the development of web/mobile pages using programming languages such as HTML, CSS3 or JavaScript along with other programming tools.",
+
+
+  "sectionSkills": "Technologies",
+  "skill": "Attention to detail",
+  "skill1": "Organization",
+  "skill2": "Autonomy"
 }
