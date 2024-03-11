@@ -1,4 +1,6 @@
 {
+  "buttonHome": "Descargar CV",
+
   "sectionAbout": "Conóceme",
   "aboutInfo": "Ahoy! Soy Elena,",
   "aboutInfo2": "Después de una vida laboral orientada a la educación mis ganas de crecer y de sentirme realizada profesionalmente me llevaron a adentrarme de lleno en la programación. ¿Que qué fue lo que más me atrajo de este mundillo? El hecho de poder",
@@ -27,12 +29,9 @@
   "sectionSkills": "Tecnologías",
   "skill": "Atención al detalle",
   "skill1": "Organización",
-  "skill2": "Autonomía"
+  "skill2": "Autonomía",
 
-
-
-
-
-
-
+  "navAbout": "Conóceme",
+  "navProjects": "Proyectos",
+  "navContact": "Contacto"
 }

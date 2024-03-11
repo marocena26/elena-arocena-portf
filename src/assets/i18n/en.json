@@ -1,4 +1,6 @@
 {
+  "buttonHome": "Download CV",
+
   "sectionAbout": "About me",
   "aboutInfo": "Ahoy! I'm Elena,",
   "aboutInfo2": "After a working life oriented to education, my desire to grow and feel professionally fulfilled led me to get into programming. What attracted me the most to this world? The fact of being able to",
@@ -24,9 +26,12 @@
   "projectsIntro4": "Angular Pipes web application.",
   "projectsDescription4": "Web designed to consult technical information about the different types of Pipes that exist in Angular with some examples of how they work. Created from a design given by Fernando Herrera (Udemy) with Angular and Bootstrap.",
 
-
   "sectionSkills": "Technologies",
   "skill": "Attention to detail",
   "skill1": "Organization",
-  "skill2": "Autonomy"
+  "skill2": "Autonomy",
+
+  "navAbout": "About me",
+  "navProjects": "Projects",
+  "navContact": "Contact"
 }

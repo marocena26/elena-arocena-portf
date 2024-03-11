@@ -49,7 +49,7 @@
                 selectedTheme === 'dark' ? 'color-light' : 'color-dark'
               "
             >
-              <p>Conóceme</p>
+              <p>{{ "navAbout" | translate }}</p>
             </a>
           </div>
           <div
@@ -63,7 +63,7 @@
                 selectedTheme === 'dark' ? 'color-light' : 'color-dark'
               "
             >
-              <p>Proyectos</p>
+              <p>{{ "navProjects" | translate }}</p>
             </a>
           </div>
           <div
@@ -91,7 +91,7 @@
                 selectedTheme === 'dark' ? 'color-light' : 'color-dark'
               "
             >
-              <p>Contacto</p>
+              <p>{{ "navContact" | translate }}</p>
             </a>
           </div>
         </div>
@@ -124,14 +124,14 @@
           <a
             href="#about-me"
             [ngClass]="selectedTheme === 'dark' ? 'color-light' : 'color-dark'"
-            >Conóceme</a
+            >{{ "navAbout" | translate }}</a
           >
         </li>
         <li class="item">
           <a
             href="#projects"
             [ngClass]="selectedTheme === 'dark' ? 'color-light' : 'color-dark'"
-            >Proyectos</a
+            >{{ "navProjects" | translate }}</a
           >
         </li>
 
@@ -146,7 +146,7 @@
           <a
             href="mailto:mariaelena.arocena@gmail.com"
             [ngClass]="selectedTheme === 'dark' ? 'color-light' : 'color-dark'"
-            >Contacto</a
+            >{{ "navContact" | translate }}</a
           >
         </li>
       </ul>

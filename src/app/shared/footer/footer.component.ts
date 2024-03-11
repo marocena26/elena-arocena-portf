@@ -10,7 +10,7 @@ export class FooterComponent implements OnInit {
   currentYear: number;
 
   constructor(private translate: TranslateService) {
-    translate.setDefaultLang('en');
+    translate.setDefaultLang('es');
     this.currentYear = new Date().getFullYear();
   }
 
