@@ -1,4 +1,5 @@
 import { Component, OnInit } from '@angular/core';
+import { TranslateService } from '@ngx-translate/core';
 
 @Component({
   selector: 'shared-footer',
@@ -8,9 +9,15 @@ import { Component, OnInit } from '@angular/core';
 export class FooterComponent implements OnInit {
   currentYear: number;
 
-  constructor() {
+  constructor(private translate: TranslateService) {
+    translate.setDefaultLang('en');
     this.currentYear = new Date().getFullYear();
   }
+
+  changeLanguage(language: string) {
+    this.translate.use(language);
+  }
+
 
   ngOnInit(): void {}
 }

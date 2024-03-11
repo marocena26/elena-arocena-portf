@@ -1,7 +1,7 @@
 <section class="about" id="about-me">
   <div class="flex align-items-center gap-3">
     <i class="pi pi-user about-icon"></i>
-    <h2>Conóceme</h2>
+    <h2>{{ "sectionAbout" | translate }}</h2>
   </div>
   <div class="about__experience">
     <p-timeline [value]="events">
@@ -31,21 +31,16 @@
     <div class="info-container">
       <div class="info-container__text">
         <p>
-          Ahoy! Soy Elena,
-          <span class="info">Junior Front-End Developer</span>. Después de una
-          vida laboral orientada a la educación mis ganas de crecer y de
-          sentirme realizada profesionalmente me llevaron a adentrarme de lleno
-          en la programación. ¿Que qué fue lo que más me atrajo de este
-          mundillo? El hecho de poder
+          {{ "aboutInfo" | translate }}
+          <span class="info">Junior Front-End Developer</span>.
+          {{ "aboutInfo2" | translate }}
           <span class="info">
-            trabajar en equipo y de forma cooperativa, la novedad del día a día,
-            los retos y sobre todo la posibilidad de trabajar en entornos
-            multidisciplinares.
+            {{ "aboutInfoSpan" | translate }}
           </span>
           <br /><br />
-         Mi objetivo a día de hoy es
-          <span class="info">mejorar mis aptitudes</span> aprendiendo de mis
-          compañeros para en el futuro ser yo la que pueda enseñar a otros.
+          {{ "aboutInfo3" | translate }}
+          <span class="info"> {{ "aboutInfoSpan2" | translate }} </span>
+          {{ "aboutInfo4" | translate }}
         </p>
       </div>
       <div class="info-container__img"></div>

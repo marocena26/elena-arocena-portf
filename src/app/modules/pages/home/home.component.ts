@@ -1,4 +1,5 @@
 import { Component } from '@angular/core';
+import { TranslateService } from '@ngx-translate/core';
 
 @Component({
   selector: 'app-home',
@@ -6,6 +7,12 @@ import { Component } from '@angular/core';
   styleUrls: ['./home.component.scss']
 })
 export class HomeComponent {
+
+  constructor(private translate: TranslateService) {
+    translate.setDefaultLang('en');
+  }
+
+
   onClicPDF(): void {
     const pdfUrl = "../../../../assets/angular-cheat-sheet.pdf";
     const pdfName = 'cv_elena_arocena.pdf';
