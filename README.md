@@ -1,27 +1,85 @@
-# ElenaArocena
+# Portfolio - Elena Arocena
 
-This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 16.0.0.
+Welcome!👏🏻 In this repository you can find the files generated in the creation of my **personal Portfolio**.
 
-## Development server
+The main objective was to create a **responsive website** where you can know a **little more about me and my work**. Additionally, it has helped me to **practice and play with Angular, typescript and different design tools**.
 
-Run `ng serve` for a dev server. Navigate to `http://localhost:4200/`. The application will automatically reload if you change any of the source files.
+> **NOTE:** Direct link to the project by clicking on the following **[link](elena-arocena-portfolio.netlify.app/)**
 
-## Code scaffolding
+## 📄​ Description 
 
-Run `ng generate component component-name` to generate a new component. You can also use `ng generate directive|pipe|service|class|guard|interface|enum|module`.
+**Welcome to my personal Portfolio!** If you are interested in knowing a little more about me and my work, you are in the right place.
 
-## Build
+In this repository we present you a **simple web, intuitive and adapted to any kind of device** (mobile, tablet and PC) so you can take a look at it anytime, anywhere. Based on my **own design**, the web will help you to know some of the aspects of my life. 
 
-Run `ng build` to build the project. The build artifacts will be stored in the `dist/` directory.
+This project **uses `ngx-translate` for content internationalization**, allowing **dynamic translation** of the user interface (ES-EN). In order to **improve the user experience**, a system has been **implemented to change the theme** of the web, you can choose between **"light-mode"🌞​** and **"dark-mode"🌚​​**.
 
-## Running unit tests
+Additionally, it uses **Jasmine and Karma for unit and integration testing**, ensuring **code quality and reliability**.
 
-Run `ng test` to execute the unit tests via [Karma](https://karma-runner.github.io).
+## 🛠️ Tools
 
-## Running end-to-end tests
+The following tools have been used when solving the project:
 
-Run `ng e2e` to execute the end-to-end tests via a platform of your choice. To use this command, you need to first add a package that implements end-to-end testing capabilities.
+- **HTML**
+- **CSS/Sass**
+  - Variables, mixins and functions
+  - Flexbox and Box model
+  - Media queries
+- **Component library**
+  - PrimeNg
+  - PrimeFLex
+  - PrimeIcon
+  - Bootstrap
+- **TypeScript**
+- **Angular**
+  - Interfaces
+  - Modules
+  - Components
+  - Imports
+  - Injections
+  - Services: To change theme mode
+  - Directives - ngIf and ngFor
+- **GIT version control**
+- **Testing**: Jasmine y Karma
+- **JSON**: To change the language (ES - EN)
+- **Design**
+  - Canva
+  - Excalidraw
 
-## Further help
+## 💾 Steps to follow to use this project on your computer:
 
-To get more help on the Angular CLI use `ng help` or go check out the [Angular CLI Overview and Command Reference](https://angular.io/cli) page.
+> **NOTE:** This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 16.0.0.
+
+**First** of all, in order to have the repository on your computer:
+
+1. Click on the top right corner > **Fork**.
+2. It will ask you to choose which GitHub user you want to fork it to. **Choose your user**.
+3. **Go to github.com/your-user/name-of-project**, **clone it** and do whatever you want, you can rename the repo, change the code, redeploy it to GitHub Pages...
+4. **Finally** and for everything to work properly, **you must disable GitHub Pages and re-enable** it so that GitHub generates the new URL correctly.
+
+Once you have **done the fork**:
+
+1. Open it in your code editor.
+2. Open a terminal and **install the local dependencies** by executing in the command terminal. Here are the ones I used to start my project:
+
+```bash
+npm install or yarn
+npm install or yarn add primeng
+npm install or yarn add primeicons
+npm install or yarn add primeflex
+npm install or yarn add @ngx-translate/core @ngx-translate/http-loader 
+```
+
+The project has to be **started** every time we start programming, to do this we will execute the **command**:
+
+```bash
+npm or yarn start
+```
+
+After running `npm/yarn start` we can start editing all the files inside the src/ folder and program comfortably 💫
+
+## 🌻​ Credits & Feedback
+
+Designed & Developed By **[Elena Arocena](https://github.com/marocena26)**
+
+Any input is most welcome. Thank you very much!
