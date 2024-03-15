@@ -17,8 +17,8 @@
   "aboutDescription3": "Bootcamp de Programación Web orientado al desarrollo de páginas web/mobile utilizando lenguajes de programación como HTML, CSS3 o JavaScript junto a otras herramientas de programación.",
 
   "sectionProjects": "Proyectos",
-  "projectsIntro": "Maquetación de un proyecto web según diseño.",
-  "projectsDescription": "Template de una landing secilla apta para editar y desarrollar futuros proyectos. Creado desde un diseño dado por Adalab con HTML5 y Sass.",
+  "projectsIntro": "Maquetación de una Landin page con diseño propio y con traducción simultanea.",
+  "projectsDescription": "Template de una landing secilla apta para editar y desarrollar futuros proyectos. Creado desde cero con HTML5, Typescript, Angular y Sass. Adicionalmente, utiliza Jasmine y Karma para pruebas unitarias y de integración",
   "projectsIntro2": "Aplicación web de Generador de tarjetas personales.",
   "projectsDescription2": "Web interactiva diseñada para generar tarjetas de visita personalizadas y que puedan ser compartidas en Twitter. Proyecto colaborativo creado desde cero con HTML5, JavaScript y Sass",
   "projectsIntro3": "Aplicación web de Geografía.",

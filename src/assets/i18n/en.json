@@ -17,8 +17,8 @@
   "aboutDescription3": "Web Programming Bootcamp oriented to the development of web/mobile pages using programming languages such as HTML, CSS3 or JavaScript along with other programming tools.",
 
   "sectionProjects": "Projects",
-  "projectsIntro": "Layout of a web project according to design.",
-  "projectsDescription": "Template of a simple landing page suitable for editing and developing future projects. Created from a design given by Adalab with HTML5 and Sass.",
+  "projectsIntro": "Layout of a Landin page with own design and simultaneous translation.",
+  "projectsDescription": "Template of a simple landing page suitable for editing and developing future projects. Built from scratch with HTML5, Typescript, Angular and Sass. Additionally, it uses Jasmine and Karma for unit and integration testing.",
   "projectsIntro2": "Business Card Generator web application",
   "projectsDescription2": "Interactive website designed to generate personalized business cards that can be shared on Twitter. Collaborative project created from scratch with HTML5, JavaScript and Sass",
   "projectsIntro3": "Geography web application.",

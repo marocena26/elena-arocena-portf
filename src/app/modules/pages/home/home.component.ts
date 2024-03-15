@@ -9,12 +9,12 @@ import { TranslateService } from '@ngx-translate/core';
 export class HomeComponent {
 
   constructor(private translate: TranslateService) {
-    translate.setDefaultLang('en');
+    translate.setDefaultLang('es');
   }
 
 
   onClicPDF(): void {
-    const pdfUrl = "../../../../assets/angular-cheat-sheet.pdf";
+    const pdfUrl = "../../../../assets/elena-arocena-cv.pdf";
     const pdfName = 'cv_elena_arocena.pdf';
 
     this.downloadPDF(pdfUrl, pdfName);

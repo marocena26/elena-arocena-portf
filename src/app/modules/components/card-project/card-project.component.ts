@@ -21,15 +21,6 @@ export class CardProjectComponent {
   private loadAllProjects() {
     this.allProjects = [
       {
-        img: 'anonymous.jpeg',
-        name: 'Anonymous proxy',
-        intro: this.translate.instant('projectsIntro'),
-        description: this.translate.instant('projectsDescription'),
-        urlGithub: 'https://github.com/marocena26/anonymous-proxy',
-        url: 'https://marocena26.github.io/anonymous-proxy/',
-        technologies: ['HTML5', 'Sass', 'Zepling'],
-      },
-      {
         img: 'adventure.jpg',
         name: 'Algebraic profile-cards',
         intro: this.translate.instant('projectsIntro2'),
@@ -55,6 +46,15 @@ export class CardProjectComponent {
         url: 'https://pipe-catalogue.netlify.app/',
         urlGithub: 'https://github.com/marocena26/pipes-app',
         technologies: ['HTML5', 'TypeScript', 'Angular', 'Bootstrap'],
+      },
+      {
+        img: 'purrfect-match.jpg',
+        name: 'Purrfect Match',
+        intro: this.translate.instant('projectsIntro'),
+        description: this.translate.instant('projectsDescription'),
+        urlGithub: 'https://github.com/marocena26/landing-page',
+        url: 'landing-purrfect-match.netlify.app/',
+        technologies: ['HTML5', 'Sass', 'TypeScript', 'Angular'],
       },
     ];
   }
