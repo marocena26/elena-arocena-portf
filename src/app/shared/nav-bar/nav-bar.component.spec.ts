@@ -24,4 +24,27 @@ describe('NavBarComponent', () => {
   it('should create', () => {
     expect(component).toBeTruthy();
   });
+
+  // =============== TEST FOR onThemeChange ===============
+
+  it('should change theme and call themeService.setTheme with correct parameter when onThemeChange is called', () => {
+    const themeServiceSpy = jasmine.createSpyObj('ThemeService', ['setTheme']);
+    component.themeService = themeServiceSpy;
+
+    component.onThemeChange('dark');
+
+    expect(component.selectedTheme).toBe('dark');
+    expect(themeServiceSpy.setTheme).toHaveBeenCalledWith('dark');
+  });
+
+  // =============== TEST FOR closeSidebar ===============
+
+  it('should set sidebarVisible to false when closeSidebar is called', () => {
+    component.sidebarVisible = true;
+
+    component.closeSidebar();
+
+    expect(component.sidebarVisible).toBe(false);
+  });
+
 });

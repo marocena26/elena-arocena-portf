@@ -34,4 +34,25 @@ describe('HomeComponent', () => {
   it('should create', () => {
     expect(component).toBeTruthy();
   });
+
+  // =============== TEST FOR onClicLinkedin ===============
+
+
+  it('should call downloadPDF with correct parameters when onClicPDF is called', () => {
+    const downloadPDFSpy = spyOn(component, 'downloadPDF');
+
+    component.onClicPDF();
+
+    expect(downloadPDFSpy).toHaveBeenCalledWith("../../../../assets/elena-arocena-cv.pdf", "cv_elena_arocena.pdf");
+  });
+
+  // =============== TEST FOR onClicLinkedin ===============
+
+  it('should open LinkedIn profile in new window', () => {
+    spyOn(window, 'open');
+    component.onClicLinkedin();
+    expect(window.open).toHaveBeenCalledWith('https://www.linkedin.com/in/maria-elena-arocena-lopez-/', '_blank');
+  });
+
+
 });
