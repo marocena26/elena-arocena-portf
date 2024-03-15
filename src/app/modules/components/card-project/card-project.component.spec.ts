@@ -1,6 +1,8 @@
 import { ComponentFixture, TestBed } from '@angular/core/testing';
 
 import { CardProjectComponent } from './card-project.component';
+import { TranslateModule } from '@ngx-translate/core';
+import { PrimeNgModule } from 'src/app/prime-ng/prime-ng.module';
 
 describe('CardProjectComponent', () => {
   let component: CardProjectComponent;
@@ -8,7 +10,9 @@ describe('CardProjectComponent', () => {
 
   beforeEach(() => {
     TestBed.configureTestingModule({
-      declarations: [CardProjectComponent]
+      declarations: [CardProjectComponent],
+      imports: [PrimeNgModule, TranslateModule.forRoot()],
+
     });
     fixture = TestBed.createComponent(CardProjectComponent);
     component = fixture.componentInstance;

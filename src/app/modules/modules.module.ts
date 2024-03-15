@@ -18,7 +18,7 @@ import { CardProjectComponent } from './components/card-project/card-project.com
     AboutMeComponent,
     ProjectsComponent,
     SkillsComponent,
-    CardProjectComponent
+    CardProjectComponent,
   ],
   imports: [
     CommonModule,
