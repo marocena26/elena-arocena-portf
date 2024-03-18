@@ -17,10 +17,10 @@
   "aboutDescription3": "Bootcamp de Programación Web orientado al desarrollo de páginas web/mobile utilizando lenguajes de programación como HTML, CSS3 o JavaScript junto a otras herramientas de programación.",
 
   "sectionProjects": "Proyectos",
-  "projectsIntro": "Maquetación de una Landin page con diseño propio y con traducción simultánea.",
-  "projectsDescription": "Template de una landing sencilla apta para editar y desarrollar futuros proyectos. Creado desde cero con HTML5, Typescript, Angular y Sass. Adicionalmente, utiliza Jasmine y Karma para pruebas unitarias y de integración",
+  "projectsIntro": "Landin page con diseño propio (es-en).",
+  "projectsDescription": "Template de una landing sencilla apta para editar y desarrollar futuros proyectos. Creado desde cero con HTML5, Typescript, Angular y Sass. Adicionalmente, utiliza Jasmine y Karma para pruebas unitarias y de integración.",
   "projectsIntro2": "Aplicación web de Generador de tarjetas personales.",
-  "projectsDescription2": "Web interactiva diseñada para generar tarjetas de visita personalizadas y que puedan ser compartidas en Twitter. Proyecto colaborativo creado desde cero con HTML5, JavaScript y Sass",
+  "projectsDescription2": "Web interactiva diseñada para generar tarjetas de visita personalizadas y que puedan ser compartidas en Twitter. Proyecto colaborativo creado desde cero con HTML5, JavaScript y Sass.",
   "projectsIntro3": "Aplicación web de Geografía.",
   "projectsDescription3": "Web diseñada para consultar información técnica de un país en concreto. Creado desde un diseño dado por Fernando Herrera (Udemy) con Angular y Bootstrap.",
   "projectsIntro4": "Aplicación web Pipes de Angular.",
