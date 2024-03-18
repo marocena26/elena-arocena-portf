@@ -11,7 +11,10 @@ import { ThemeService } from 'src/app/services/theme.service';
 export class CardProjectComponent implements OnInit {
   allProjects: Project[] = [];
 
-  constructor(private translate: TranslateService, private themeService: ThemeService) {
+  constructor(
+    private translate: TranslateService,
+    private themeService: ThemeService
+  ) {
     this.translate.onLangChange.subscribe(() => {
       this.loadAllProjects();
     });
@@ -19,15 +22,12 @@ export class CardProjectComponent implements OnInit {
     this.loadAllProjects();
   }
 
-
   selectedTheme: string = 'dark';
 
-  // constructor(private themeService: ThemeService) {}
-
   ngOnInit(): void {
-    this.selectedTheme = this.themeService.getTheme(); // Obtener el tema actual al iniciar
-    this.themeService.themeChanged$.subscribe(theme => {
-      this.selectedTheme = theme; // Actualizar el tema cuando cambie
+    this.selectedTheme = this.themeService.getTheme();
+    this.themeService.themeChanged$.subscribe((theme) => {
+      this.selectedTheme = theme;
     });
   }
 
