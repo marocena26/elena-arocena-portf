@@ -3,6 +3,7 @@
 @mixin reset-partials() {
   html,
   body {
+    scroll-behavior: smooth;
     font-family: $font-family-custom;
     font-size: $default-font-size;
     margin: 0;

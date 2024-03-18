@@ -53,7 +53,7 @@ export class CardProjectComponent {
         intro: this.translate.instant('projectsIntro'),
         description: this.translate.instant('projectsDescription'),
         urlGithub: 'https://github.com/marocena26/landing-page',
-        url: 'landing-purrfect-match.netlify.app/',
+        url: 'https://landing-purrfect-match.netlify.app/',
         technologies: ['HTML5', 'Sass', 'TypeScript', 'Angular'],
       },
     ];

@@ -1,7 +1,8 @@
 @import "../../../../themes/variables.scss";
 
 .about {
-  padding: 92px 0 24px 0;
+  padding:24px 0;
+  scroll-margin-top: 80px;
   font-family: $font-family-custom;
 
   &__experience {
