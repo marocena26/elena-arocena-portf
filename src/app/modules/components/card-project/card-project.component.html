@@ -18,10 +18,22 @@
     <p>{{ project.description }}</p>
     <div class="flex gap-3">
       <a href="{{ project.urlGithub }}" target="_blank"
-        ><i class="pi pi-github card-icon" ></i
+        ><i class="pi pi-github card-icon"
+        [ngClass]="{
+          'color-light': selectedTheme === 'dark',
+          'color-dark': selectedTheme === 'light'
+        }"
+        ></i
       ></a>
       <a href="{{ project.url }}" target="_blank"
-        ><i class="pi pi-desktop card-icon" ></i
+        ><i class="pi pi-desktop card-icon"
+
+        [ngClass]="{
+          'color-light': selectedTheme === 'dark',
+          'color-dark': selectedTheme === 'light'
+        }"
+
+        ></i
       ></a>
     </div>
   </div>

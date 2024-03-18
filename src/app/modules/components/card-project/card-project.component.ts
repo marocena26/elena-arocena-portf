@@ -1,21 +1,34 @@
-import { Component } from '@angular/core';
+import { Component, OnInit } from '@angular/core';
 import { TranslateService } from '@ngx-translate/core';
 import { Project } from 'src/app/interfaces/project';
+import { ThemeService } from 'src/app/services/theme.service';
 
 @Component({
   selector: 'card-project',
   templateUrl: './card-project.component.html',
   styleUrls: ['./card-project.component.scss'],
 })
-export class CardProjectComponent {
+export class CardProjectComponent implements OnInit {
   allProjects: Project[] = [];
 
-  constructor(private translate: TranslateService) {
+  constructor(private translate: TranslateService, private themeService: ThemeService) {
     this.translate.onLangChange.subscribe(() => {
       this.loadAllProjects();
     });
 
     this.loadAllProjects();
+  }
+
+
+  selectedTheme: string = 'dark';
+
+  // constructor(private themeService: ThemeService) {}
+
+  ngOnInit(): void {
+    this.selectedTheme = this.themeService.getTheme(); // Obtener el tema actual al iniciar
+    this.themeService.themeChanged$.subscribe(theme => {
+      this.selectedTheme = theme; // Actualizar el tema cuando cambie
+    });
   }
 
   private loadAllProjects() {
