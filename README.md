@@ -1,4 +1,4 @@
-# Portfolio - Elena Arocena ☕​📔​
+# Portfolio - Elena Arocena 👩🏻‍💻​
 
 Welcome!👏🏻 In this repository you can find the files generated in the creation of my **personal Portfolio**.
 
