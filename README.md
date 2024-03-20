@@ -4,7 +4,7 @@ Welcome!👏🏻 In this repository you can find the files generated in the crea
 
 The main objective was to create a **responsive website** where you can know a **little more about me and my work**. Additionally, it has helped me to **practice and play with Angular, typescript and different design tools**.
 
-> **NOTE:** Direct link to the project by clicking on the following **[link](elena-arocena-portfolio.netlify.app/)**
+> **NOTE:** Direct link to the project by clicking on the following **[link](https://elena-arocena-portfolio.netlify.app/)**
 
 ## 📄​ Description 
 
