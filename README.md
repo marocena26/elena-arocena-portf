@@ -16,6 +16,42 @@ This project **uses `ngx-translate` for content internationalization**, allowing
 
 Additionally, it uses **Jasmine and Karma for unit and integration testing**, ensuring **code quality and reliability**.
 
+```
+├───interfaces/
+│   ├───project.ts
+│   └───skills.ts
+├───modules/
+│   ├───components/
+│   │   └───card-project/
+│   └───pages/
+│       ├───about-me/
+│       ├───home/
+│       ├───projects/
+│       ├───skills/
+│       ├───modules-routing.module.ts
+│       └───modules.module.ts
+├───prime-ng/
+│   └───prime-ng.module.ts
+├───services/
+│   └───theme.service.ts
+├───shared/
+│   ├───footer/
+│   ├───nav-bar/
+│   └───shared.module.ts
+├───assets/
+│   ├───i18n/
+│   ├───icon/
+│   └───img-project/
+└───themes/
+    ├───default/
+        ├───fonts/
+        ├───modules/
+        ├───partials/
+        └───core.thme.scss
+    ├───default.theme.scss
+    └───variables.scss
+```
+
 ## 🛠️ Tools
 
 The following tools have been used when solving the project:
