@@ -1,5 +1,33 @@
+<!-- ************** MOBILE ************** -->
+
+<section class="home showSectionMobile" id="home">
+  <div class="container-custom home__wrap">
+    <div>
+      <h2>Elena Arocena</h2>
+      <h1>Front-End<span>Developer</span></h1>
+    </div>
+    <div class="flex home__btns">
+      <p-button
+        [label]="'buttonHome' | translate"
+        [outlined]="true"
+        icon="pi pi-file-pdf"
+        (click)="onClicPDF()"
+      ></p-button>
+      <p-button
+        label="Linkedin"
+        [outlined]="true"
+        icon="pi pi-linkedin"
+        (click)="onClicLinkedin()"
+      >
+      </p-button>
+    </div>
+  </div>
+</section>
+
+<!-- ************** DESK ************** -->
+
 <main class="main container-custom">
-  <section class="home" id="home">
+  <section class="home showSectionDesk" id="home">
     <div>
       <h2>Elena Arocena</h2>
       <h1>Front-End<span>Developer</span></h1>
@@ -7,8 +35,8 @@
 
     <div class="flex home__btns">
       <p-button
-      [label]="'buttonHome' | translate"
-      [outlined]="true"
+        [label]="'buttonHome' | translate"
+        [outlined]="true"
         icon="pi pi-file-pdf"
         (click)="onClicPDF()"
       ></p-button>

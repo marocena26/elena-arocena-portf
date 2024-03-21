@@ -5,16 +5,18 @@
   margin-top: 36px;
   height: 100vh;
 
-  background: url('../../../../assets/img-background.svg');
-  background-position: center;
+  background: url("../../../../assets/img-background.svg");
+  background-position: center 10px;
   background-repeat: no-repeat;
   background-size: cover;
 
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  gap: 28px;
-  animation-duration: 2s;
+  &__wrap {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 28px;
+    animation-duration: 2s;
+  }
 
   &__btns {
     gap: 8px;
@@ -43,18 +45,17 @@ h1 span {
   position: relative;
   display: inline-block;
   margin-left: 0.5rem;
-  color: $color-tertiary;
 }
 
 h1 span::after {
   content: "";
   height: 4px;
-  background-color: $color-tertiary;
   position: absolute;
   bottom: -4px;
   left: 0;
   width: 0;
   animation: linkAfter 0.5s 1s ease both;
+  background-color: $color-tertiary;
 }
 
 .container-custom {
@@ -66,8 +67,32 @@ h1 span::after {
 
 // ====================== REPONSIVE PROPERTIES =================
 
+.showSectionMobile {
+  display: flex;
+}
+
+.showSectionDesk {
+  display: none;
+}
+
 @media (min-width: 768px) {
+  .showSectionMobile {
+    display: none;
+  }
+
+  .showSectionDesk {
+    display: flex;
+  }
+
   .home {
+    background-position: center 20px;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 28px;
+    animation-duration: 2s;
+
     &__btns {
       gap: 24px;
     }
@@ -75,6 +100,15 @@ h1 span::after {
 
   h1 {
     font-size: 52px;
+  }
+
+  h1 span {
+    color: $color-tertiary;
+  }
+
+  h1 span::after {
+    content: "";
+    background-color: $color-tertiary;
   }
 
   h2 {
